@@ -3,21 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MenuBehavior : MonoBehaviour
+public class PrincipalMenu : MonoBehaviour
 {
-    public void triggerMenuBehavior(int i)
+    public void triggerPrincipalMenu(int i)
     {
         switch (i)
         {
             default:
             case (0):
-                SceneManager.LoadScene("Level");
+                SceneManager.LoadScene("Menu");
                 break;
             case (1):
-                SceneManager.LoadScene("Level2");
+                SceneManager.LoadScene("Game2");
                 break;
             case (2):
-                SceneManager.LoadScene("Menu01");
+                Application.Quit();
                 break;
         }
     }
